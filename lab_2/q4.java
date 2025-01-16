@@ -16,7 +16,6 @@ public class q4 {
         new q4();
         new q4();
         System.out.println("No of calls: " + noOfCalls);
-        
 
     }
 }

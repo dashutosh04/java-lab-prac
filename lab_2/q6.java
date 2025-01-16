@@ -9,7 +9,7 @@ public class q6 {
         int left = 0;
         int right = 0;
 
-        int len = args.length;
+        int len = args.length; // Storing array length [9 in the case of 3x3 matrix]
 
         int[] arr = new int[len];
 
@@ -20,7 +20,7 @@ public class q6 {
             for (int j = 0; j < 3; j++) {
                 if (i == j)
                     left += arr[i * 3 + j];
-                if ((i + j) == (3 - 1))
+                if ((i + j) == 2)
                     right += arr[i * 3 + j];
             }
         }
