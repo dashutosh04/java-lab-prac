@@ -2,7 +2,7 @@ package lab_3.q6;
 
 /*
  * Write a program in java using constructor overloading concept to calculate
-the area of a rect having data member as length and breadth. Use default constructor to
+the area of a rectangle having data member as length and breadth. Use default constructor to
 initialize the value of the data member to zero and parameterized constructor to initialize the value
 of data member according to the user input.
  */
@@ -31,7 +31,7 @@ public class Rectangle {
     public static void main(String[] args) {
 
         rect rect1 = new rect();
-        System.out.println("Area of rectangle (default) - " + rect1.calc());
+        System.out.println("Area (default) - " + rect1.calc());
 
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the length - ");
@@ -42,6 +42,6 @@ public class Rectangle {
         sc.close();
 
         rect rect2 = new rect(length, breadth);
-        System.out.println("Area of rectangle (input based) - " + rect2.calc());
+        System.out.println("Area (input based) - " + rect2.calc());
     }
 }

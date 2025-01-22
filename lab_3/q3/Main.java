@@ -32,7 +32,7 @@ class Student {
     }
 }
 
-public class Demo {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -63,14 +63,14 @@ public class Demo {
             student.display();
         }
 
-        Student lowestCgpaStudent = students[0];
+        Student lowestCgpa = students[0];
         for (int i = 1; i < students.length; i++) {
-            if (students[i].getCgpa() < lowestCgpaStudent.getCgpa()) {
-                lowestCgpaStudent = students[i];
+            if (students[i].getCgpa() < lowestCgpa.getCgpa()) {
+                lowestCgpa = students[i];
             }
         }
 
         System.out.println("\nStudent with the lowest CGPA:");
-        lowestCgpaStudent.display();
+        lowestCgpa.display();
     }
 }

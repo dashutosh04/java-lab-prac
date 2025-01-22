@@ -29,15 +29,17 @@ public class Calc {
         clc clc = new clc();
 
         int res1 = clc.sub(10, 5);
-        System.out.println("res of subtracting two integers: " + res1);
 
         int res2 = clc.sub(15, 5, 3);
-        System.out.println("res of subtracting three integers: " + res2);
 
         double res3 = clc.sub(10.5, 5.2);
-        System.out.println("res of subtracting two doubles: " + res3);
 
         double res4 = clc.sub(10, 3.5);
-        System.out.println("res of subtracting an integer and a double: " + res4);
+
+        System.out.println("Sub: " + res1);
+        System.out.println("Sub: " + res2);
+        System.out.println("Sub: " + res3);
+        System.out.println("Sub: " + res4);
+
     }
 }

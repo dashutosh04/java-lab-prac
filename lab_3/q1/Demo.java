@@ -28,18 +28,18 @@ public class Demo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter the length of the box: ");
+        System.out.print("Enter the length : ");
         double length = scanner.nextDouble();
 
-        System.out.print("Enter the width of the box: ");
+        System.out.print("Enter the width : ");
         double width = scanner.nextDouble();
 
-        System.out.print("Enter the height of the box: ");
+        System.out.print("Enter the height : ");
         double height = scanner.nextDouble();
 
         Box box = new Box(length, width, height);
 
-        System.out.println("The volume of the box is: " + box.volume());
+        System.out.println("The volume is: " + box.volume());
 
         scanner.close();
     }
