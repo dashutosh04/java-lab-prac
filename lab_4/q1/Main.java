@@ -36,16 +36,16 @@ class _3D extends _2D {
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter sheet dimensions (l,b) :");
-        double sL = scanner.nextDouble();
-        double sB = scanner.nextDouble();
+        double sL = sc.nextDouble();
+        double sB = sc.nextDouble();
 
         System.out.println("Enter box dimensions (l,b,h) :");
-        double bL = scanner.nextDouble();
-        double bB = scanner.nextDouble();
-        double bH = scanner.nextDouble();
+        double bL = sc.nextDouble();
+        double bB = sc.nextDouble();
+        double bH = sc.nextDouble();
 
         _2D sheet = new _2D(sL, sB);
         _3D box = new _3D(bL, bB, bH);
@@ -53,6 +53,6 @@ public class Main {
         System.out.println("Cost of sheet: INR " + sheet.Area() * 40);
         System.out.println("Cost of box: INR " + box.Vol() * 60);
 
-        scanner.close();
+        sc.close();
     }
 }
