@@ -30,7 +30,6 @@ class Head implements Manager {
         sc.nextLine();
         System.out.print("Enter employee name: ");
         empName = sc.nextLine();
-        sc.close();
     }
 
     public void getDeptDetails() {
@@ -40,7 +39,6 @@ class Head implements Manager {
         sc.nextLine();
         System.out.print("Enter department name: ");
         deptName = sc.nextLine();
-        sc.close();
     }
 
     public void displayDetails() {
