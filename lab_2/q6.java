@@ -9,7 +9,7 @@ public class q6 {
         int left = 0;
         int right = 0;
 
-        int len = args.length; // Storing array length [9 in the case of 3x3 matrix]
+        int len = args.length; 
 
         int[] arr = new int[len];
 
