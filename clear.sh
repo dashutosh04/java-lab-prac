@@ -1,9 +1,6 @@
 #!/bin/bash
 
-# USE WITH CAUTION !!!!
+# Find and delete all .class files recursively from the current directory
+find . -type f -name "*.class" -delete
 
-PROJECT_DIR=$(pwd)
-
-find "$PROJECT_DIR" -name "*.class" -type f -exec rm -f {} \;
-
-echo "All .class files have been removed from the project directory."
+echo "All .class files have been deleted."

@@ -9,24 +9,31 @@ package lab_5.q5;
  */
 
 class Employee {
-    final String Name = "TechCorp";
+    final String companyName = "TechCorp";
 
     final void displayCompanyName() {
-        System.out.println("Company Name: " + Name);
+        System.out.println("Company Name: " + companyName);
     }
 }
 
-/*
- * class Developer extends Employee {
- * void displayCompanyName() {
- * System.out.println("Error");
- * }
- * }
- */
+class Developer extends Employee {
+    public Developer() {
+        try {
+            displayCompanyName();
+        } catch (Exception e) {
+            System.out.println("An error occurred: " + e.getMessage());
+        }
+    }
+}
 
 public class Main {
     public static void main(String[] args) {
-        Employee emp = new Employee();
-        emp.displayCompanyName();
+        try {
+            Employee emp = new Employee();
+            emp.displayCompanyName();
+            new Developer();
+        } catch (Exception e) {
+            System.out.println("An error occurred: " + e.getMessage());
+        }
     }
 }
