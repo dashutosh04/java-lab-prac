@@ -5,7 +5,6 @@ package lab_6.q2;
  * catch, and finally block.
 */
 
-
 public class Main {
     public static void main(String[] args) {
         int a = 10;

@@ -1,6 +1,5 @@
 package lab_6.q1;
 
-
 /* 
  * Write a Java program to generate an
  * ArrayIndexOutofBoundsException and handle it using catch statement.
